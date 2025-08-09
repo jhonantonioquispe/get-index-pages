@@ -1,0 +1,26 @@
+{
+  "name": "pagegenerator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite && tsc --watch background/background.ts --outDir dist/background",
+    "build:popup": "vite build",
+    "build:background": "tsc background/background.ts --outDir dist/background",
+    "build": "npm run build:popup && npm run build:background"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "typescript": "^5.9.2",
+    "vite": "^7.1.1",
+    "vue": "^3.5.18",
+    "vue-tsc": "^3.0.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.1"
+  }
+}
